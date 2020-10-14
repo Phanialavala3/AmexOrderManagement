@@ -54,11 +54,11 @@ public class OrderService {
                 ProductEntity product;
                 product = productRepository.findByName(entry.getKey());
                 if (entry.getKey().equals("Apple")) {
-                    totalCost = totalCost+(entry.getValue() / 2) * (product.getPrice() / 2);
+                    totalCost += (entry.getValue() / 2) * (product.getPrice() / 2);
                     totalCost = totalCost + ((entry.getValue() % 2) * product.getPrice());
                 }
                 if (entry.getKey().equals("Orange")) {
-                    totalCost = totalCost+(entry.getValue() / 3) * (product.getPrice() * 2);
+                    totalCost += (entry.getValue() / 3) * (product.getPrice() * 2);
                     totalCost = totalCost + ((entry.getValue() % 3) * product.getPrice());
                 }
             }
