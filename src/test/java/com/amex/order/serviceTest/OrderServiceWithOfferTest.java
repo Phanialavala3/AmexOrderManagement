@@ -99,15 +99,6 @@ public class OrderServiceWithOfferTest {
     }
 
 
-
-    private CustomerOrder buildCustomerOrderWithOutOffer() {
-        return CustomerOrder.builder()
-                .orderID((long) 1)
-                .orderList(Arrays.asList("Apple", "Apple", "Orange", "Apple"))
-                .totalOrderCost(2.05)
-                .build();
-    }
-
     private OrderDTO buildOrderDTOWithOffer(){
         return OrderDTO.builder()
                 .orderID((long) 1)
